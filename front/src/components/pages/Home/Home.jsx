@@ -20,7 +20,8 @@ import Coins from "../../../icons/Coins";
 import TextSlider from "./TextSlider";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import Navigation from "./Navigation";
+import Navigation from "../../layouts/Footer/Navigation";
+import Header from "../../layouts/Header/Header";
 
 const Home = () => {
   const levelNames = [
@@ -139,20 +140,9 @@ const Home = () => {
   const profitPerHour = points * 10;
 
   return (
-    <div className="bg-gradient-to-b from-blue-50 to-purple-50 flex justify-center">
-      <div className="w-full text-gray-800 h-screen font-bold flex flex-col max-w-xl">
+    <div className="h-full bg-gradient-to-b from-blue-50 to-purple-50 flex justify-center">
+      <div className="w-full text-gray-800  font-bold flex flex-col max-w-xl">
         <div className=" z-10">
-          <div className="flex items-center justify-center pt-4">
-            {/* <div className="p-2 rounded-lg bg-white shadow-md">
-              <Hamster size={24} className="text-purple-500" />
-            </div> */}
-            <div>
-              <p className="text-4xl text-blue-800 font-thin font-serif text-center">
-                {/* OXU */}
-                BXU
-              </p>
-            </div>
-          </div>
           <div className="border-2 rounded border-red-400 mt-2">
             <TextSlider />
           </div>
@@ -315,7 +305,6 @@ const Home = () => {
               </div>
             </div>
 
-            <Navigation />
           </div>
         </div>
       </div>
