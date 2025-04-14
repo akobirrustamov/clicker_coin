@@ -1,0 +1,65 @@
+.progress-gradient {
+    background: linear-gradient(to right, #8b5cf6, #6366f1, #3b82f6);
+}
+
+.click-card {
+    /* background: radial-gradient(circle, #e0e7ff, #c7d2fe); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    /* box-shadow: 0 4px 20px rgba(139, 92, 246, 0.2); */
+    transition: transform 0.1s ease-in-out;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes float {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+.main-character {
+    transition: transform 0.2s ease;
+}
+
+.main-character .img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* .click-card:hover .main-character {
+    transform: scale(1.05);
+} */
+ 

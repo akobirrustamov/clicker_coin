@@ -6,15 +6,17 @@ import dailyCipher from "./daily-cipher.png";
 import dailyCombo from "./daily-combo.png";
 import mainCharacter from "./main-character.png";
 import hamsterCoin from "./hamster-coin.png";
-import logo from "./logo.png"
+import logo from "./logo.png";
+import testLogo from "./testLogo.png";
 export {
-    hamsterExchange,
-    binanceLogo,
-    dollarCoin,
-    dailyReward,
-    dailyCipher,
-    dailyCombo,
-    mainCharacter,
-    hamsterCoin,
-    logo
+  hamsterExchange,
+  binanceLogo,
+  dollarCoin,
+  dailyReward,
+  dailyCipher,
+  dailyCombo,
+  mainCharacter,
+  hamsterCoin,
+  logo,
+  testLogo,
 };
