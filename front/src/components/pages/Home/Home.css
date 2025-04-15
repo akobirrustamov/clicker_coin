@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     /* box-shadow: 0 4px 20px rgba(139, 92, 246, 0.2); */
     transition: transform 0.1s ease-in-out;
 }
@@ -26,7 +26,7 @@
     }
 }
 
-.dot {
+/* .dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -34,7 +34,7 @@
     top: 8px;
     right: 8px;
     animation: blink 1.5s infinite;
-}
+} */
 
 @keyframes float {
     0% {

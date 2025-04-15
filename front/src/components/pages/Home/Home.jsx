@@ -141,9 +141,9 @@ const Home = () => {
 
   return (
     <div className="h-full bg-gradient-to-b from-blue-50 to-purple-50 flex justify-center">
-      <div className="w-full text-gray-800  font-bold flex flex-col max-w-xl">
-        <div className=" z-10">
-          <div className="border-2 rounded border-red-400 mt-2">
+      <div className="w-full text-gray-800  font-bold flex flex-col max-w-xl px-2">
+        <div className="mt-2 z-10">
+          <div className="border-2 rounded border-red-400">
             <TextSlider />
           </div>
           {/* <div className="flex items-center mx-2 justify-between space-x-4 mt-4">
@@ -193,25 +193,25 @@ const Home = () => {
           </div> */}
         </div>
 
-        <div className="flex-grow relative overflow-hidden">
-          <div className="absolute top-[2px] left-0 right-0 bottom-0 bg-white shadow-inner">
-            <div className="flex justify-between items-center px-4 mt-2">
-              <p className="font-serif text-3xl font-light">Earning</p>
-              <div className="flex items-center gap-2 space-x-2 text-2xl">
-                <p className="p-1 px-3 bg-blue-200 rounded text-blue-600">+</p>
+        <div className="flex-grow overflow-hidden">
+          <div className=" bg-white shadow-inner">
+            <div className="flex justify-between items-center px-4 mt-1 pt-1">
+              <p className="font-serif text-xl font-light">Earning</p>
+              <div className="flex items-center gap-2 text-lg">
+                <p className="px-2 bg-blue-200 rounded-md text-blue-500">+</p>
                 <i class="fa-regular fa-bell text-gray-500"></i>
               </div>
             </div>
 
             <div
-              className="w-full mt-6 main-character "
+              className="w-full mt-6 flex justify-center items-center"
               onClick={handleCardClick}
             >
-              <div className="click-card max-w-[280px] mx-auto flex flex-col items-center justify-center p-4 overflow-hidden relative cursor-pointer z-10">
-                <img
+              <div className="click-card flex justify-center items-center max-w-[280px] mx-auto p-4 cursor-pointer">
+                <img 
                   src={testLogo}
                   alt="Main Character"
-                  className="main-character z-20 relative w-60 h-72 object-cover"
+                  className="w-[80vw] object-cover"
                 />
                 <div className=""></div>
               </div>
@@ -274,20 +274,20 @@ const Home = () => {
               </div>
             </div> */}
             {/* Статистика кликов и монет */}
-            <div className="w-full px-6 mt-4 border-t-2 border-gray-200">
-              <div className="bg-white p-4">
-                <div className="grid grid-cols-3 gap-4 text-center text-sm text-gray-600">
-                  <div className="border-r-2 border-gray-200 pr-4">
-                    <p className="font-bold text-green-600">{coinsEarned}</p>
-                    <p>Заработано</p>
+            <div className="w-full mt-4 border-t-2 border-gray-200">
+              <div className="bg-white p-2">
+                <div className="grid grid-cols-3 text-center text-xs text-gray-600">
+                  <div className="border-r-2 border-gray-200">
+                    <p className="font-medium text-green-600 text-lg">{coinsEarned}</p>
+                    <p>Ishlangan</p>
                   </div>
-                  <div className="border-r-2 border-gray-200 pr-4">
-                    <p className="font-bold text-red-500">{coinsSpent}</p>
-                    <p>Потрачено</p>
+                  <div className="border-r-2 border-gray-200">
+                    <p className="font-medium text-red-500 text-lg">{coinsSpent}</p>
+                    <p>Ishlatilgan</p>
                   </div>
                   <div>
-                    <p className="font-bold text-purple-600">{coinBalance}</p>
-                    <p>Остаток:</p>
+                    <p className="font-medium text-purple-600 text-lg">{coinBalance}</p>
+                    <p>Qoldiq </p>
                   </div>
                 </div>
 
